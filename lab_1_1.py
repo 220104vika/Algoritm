@@ -13,6 +13,11 @@ for char in pas:
     elif char in "@#$%":
         is_spet = True
 if len(pas) > 5 and is_numeric and is_upper and is_lower and is_spet:
-    print("Пароль верный")
+    print("Пароль подходит")
 else:
     print("Пароль говно")
+pas_povtor = input("Повторите пароль")
+if pas == pas_povtor:
+    print("Пароль Верный")
+else:
+    print("Пароль неверный")
